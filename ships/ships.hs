@@ -133,6 +133,7 @@ gameCycle = do
     0 -> do
       printOnScreen (show("Game over...")) TimesRoman24 ((w/2)-90,h-100) 1.0 1.0 1.0
       printOnScreen (show("Press 'q' to quit")) TimesRoman24 ((w/2)-100,h-300) 1.0 1.0 1.0
+      printOnScreen (show("Press 'r' to play again")) TimesRoman24 ((w/2)-100,h-350) 1.0 1.0 1.0
       ball1 <- findObject "ball1" "ballGroup"
       ball2 <- findObject "ball2" "ballGroup"
       ball3 <- findObject "ball3" "ballGroup"
@@ -150,6 +151,7 @@ gameCycle = do
     4 -> do
       printOnScreen (show("You won!!!")) TimesRoman24 ((w/2)-90,h-100) 1.0 1.0 1.0
       printOnScreen (show("Press 'q' to quit")) TimesRoman24 ((w/2)-100,h-300) 1.0 1.0 1.0
+      printOnScreen (show("Press 'r' to play again")) TimesRoman24 ((w/2)-100,h-350) 1.0 1.0 1.0
       ball1 <- findObject "ball1" "ballGroup"
       ball2 <- findObject "ball2" "ballGroup"
       ball3 <- findObject "ball3" "ballGroup"
